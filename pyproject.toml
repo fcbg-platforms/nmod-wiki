@@ -65,6 +65,7 @@ doc = [
   'sphinx-gallery',
   'sphinx-issues',
   'sphinxcontrib-bibtex',
+  'myst-parser',
 ]
 full = [
   'nmod_wiki[all]',
