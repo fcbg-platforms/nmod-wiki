@@ -1,5 +1,3 @@
-.. include:: ../links.inc
-
 # Automatic motor threshold estimation
 
 This page describes the necessary setup, software and steps to automatically and rapidly estimate the resting motor threshold (RMT) of any individual at the NMOD facility at Campus Biotech.

@@ -67,6 +67,11 @@ source_suffix = {
     ".txt": "markdown",
     ".md": "markdown",
 }
+
+myst_enable_extensions = [
+    "colon_fence",     #  ```{include}
+]
+
 # Sphinx will warn about all references where the target cannot be found.
 nitpicky = True
 nitpick_ignore = []
