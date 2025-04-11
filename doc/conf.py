@@ -55,11 +55,18 @@ extensions = [
     "sphinx_design",
     "sphinx_gallery.gen_gallery",
     "sphinx_issues",
+    "myst_parser",
 ]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
 
+# The suffix of source filenames.
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 # Sphinx will warn about all references where the target cannot be found.
 nitpicky = True
 nitpick_ignore = []
