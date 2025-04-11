@@ -7,6 +7,7 @@ TMS general information
     :maxdepth: 1
 
     guidelines.rst
+    motor-threshold.md
 
 TMS devices
 ===========
