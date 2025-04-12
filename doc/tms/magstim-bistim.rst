@@ -73,7 +73,7 @@ value.
 
         Intensity is set as a percentage of the maximum stimulator output. The intensity
         should be defined based on
-        :ref:`the individual motor threshold <tms/guidelines:Motor threshold>`.
+        :ref:`the individual motor threshold <tms/motor-threshold:Automatic motor threshold estimation>`.
 
     .. tab-item:: Inter-pulse interval
 
