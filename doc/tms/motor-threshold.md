@@ -31,7 +31,6 @@ This process converges rapidly towards the RMT (~40 sec). If necessary, the defa
 
 ```{figure} ../_static/motor/Tuto_MTAT_1.png
 :align: center
-:class: img-with-border
 :width: 600
 
 Example of Matlab-based EMG data recording.
@@ -42,7 +41,6 @@ By contrast, the automatic `MTAT_fcbg_rest.m` program is fast and fully automati
 
 ```{figure} ../_static/motor/Tuto_MTAT_2-980x530.png
 :align: center
-:class: img-with-border
 :width: 600
 
 **On the left**: last EMG acquired. In the middle: next TMS amplitude. **One the right**: Summary of all peak-to-peak MEP data vs. TMS amplitude
