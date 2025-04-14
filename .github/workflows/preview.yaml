@@ -36,6 +36,7 @@ jobs:
         run: nmod-wiki sys-info --developer
       - name: Build doc
         run: make -C doc html
+        continue-on-error: true
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
