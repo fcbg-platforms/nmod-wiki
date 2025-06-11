@@ -8,8 +8,9 @@ This page describes the necessary setup, software and steps to automatically and
 
 ## Setup
 
-- Connect the TMS (MagVenture / {ref}`tms/magstim-bistim:Magstim BiStim²`) to the NMOD desktop computer using the vendor serial cable.
-- Turn on the EMG desktop WIFI receiver and activate one EMG sensor – with a 156ms delay.
+- Connect the TMS ( {ref}`tms/magstim-super-rapid-plus:Magstim Super Rapid² Plus¹` / {ref}`tms/magstim-bistim:Magstim BiStim²`) to the NMOD desktop computer using the vendor serial cable.
+- Turn on the EMG desktop WIFI Neuraxon receiver and start MR3 software to control the Neuraxon.
+- In MR3, go to Hardware Setup, and in General check that there is a delay of 156/96ms, then activate one DTS sensor corresponding to your EMG device (serial number on it).
 - Turn on the CED Power3 1401 and connect the relevant EMG to the first digital port “0”.
 - Connect the TMS Trigger Out coaxial output to the “Trigger” port of the CED Power3 1401.
 
@@ -20,9 +21,9 @@ Run the code `MTAT_fcbg_rest.m`, a modified version of the program written by Pr
  
 
 The matlab program `MTAT_fcbg_rest.m` connects to the TMS and iteratively:
-- adjust the TMS amplitude to minimize the uncertainty on the RMT wait for the TMS air trigger pedal to deliver the TMS pulse
-- record the EMG accepts / repeats the measurement based on the EMG baseline level before the TMS pulse analyzes the EMG data and calculates the 95% confidence interval on the RMT
-- Exit the loop if RMT is certain.
+- adjusts the TMS amplitude to minimize the uncertainty on the RMT wait for the TMS air trigger pedal to deliver the TMS pulse
+- records the EMG and accepts / repeats the measurement based on the EMG baseline level before the TMS pulse analyzes the EMG data and calculates the 95% confidence interval on the RMT
+- Exits the loop if RMT is certain.
  
 
 ```{note}
@@ -37,7 +38,7 @@ Example of Matlab-based EMG data recording.
 ```
 
 Counting the number of positive MEP (ie above RMT) is extremely time consuming and requires user interaction to count and/or adjust the TMS amplitude.
-By contrast, the automatic `MTAT_fcbg_rest.m` program is fast and fully automatic. The experimenter only needs to press the TMS pedal every 3 seconds to send the adjusted TMS pulse.
+By contrast, the `MTAT_fcbg_rest.m` program is fast and fully automatic. The experimenter only needs to press the TMS pedal every 3 seconds to send the adjusted TMS pulse.
 
 ```{figure} ../_static/motor/Tuto_MTAT_2-980x530.png
 :align: center
