@@ -55,10 +55,22 @@ extensions = [
     "sphinx_design",
     "sphinx_gallery.gen_gallery",
     "sphinx_issues",
+    "myst_parser",
 ]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
+
+# The suffix of source filenames.
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".txt": "markdown",
+    ".md": "markdown",
+}
+
+myst_enable_extensions = [
+    "colon_fence",  #  ```{include}
+]
 
 # Sphinx will warn about all references where the target cannot be found.
 nitpicky = True
@@ -219,7 +231,7 @@ def linkcode_resolve(domain: str, info: dict[str, str]) -> str | None:
 
     # retrieve start/stop lines
     source, start_line = inspect.getsourcelines(pyobject)
-    lines = "L%d-L%d" % (start_line, start_line + len(source) - 1)
+    lines = f"L{start_line}-L{start_line + len(source) - 1}"
 
     # create URL
     if "dev" in release:

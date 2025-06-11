@@ -12,6 +12,7 @@
     tms/guidelines.rst
     tms/magstim-bistim.rst
     tms/magstim-super-rapid-plus.rst
+    tms/motor-threshold.md
 
 .. toctree::
     :hidden:

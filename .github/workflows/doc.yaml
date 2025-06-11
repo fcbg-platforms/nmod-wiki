@@ -67,9 +67,10 @@ jobs:
           git-config-name: 'github-actions[bot]'
           git-config-email: 'github-actions[bot]@users.noreply.github.com'
           single-commit: true
-          force: true
+          force: false
           clean: true
           clean-exclude: |
             CNAME
             .nojekyll
             .gitignore
+            pr-preview/
