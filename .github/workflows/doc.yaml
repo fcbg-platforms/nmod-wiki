@@ -67,7 +67,7 @@ jobs:
           git-config-name: 'github-actions[bot]'
           git-config-email: 'github-actions[bot]@users.noreply.github.com'
           single-commit: true
-          force: force
+          force: true
           clean: true
           clean-exclude: |
             CNAME
