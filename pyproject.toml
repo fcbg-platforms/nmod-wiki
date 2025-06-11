@@ -58,6 +58,7 @@ doc = [
   'intersphinx_registry',
   'matplotlib',
   'memory-profiler',
+  'myst-parser',
   'numpydoc',
   'sphinx',
   'sphinx-copybutton',
