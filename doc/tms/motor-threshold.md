@@ -17,7 +17,7 @@ This page describes the necessary setup, software and steps to automatically and
 ## Software
 
 Start `Matlab 2017b` on the NMOD facility desktop computer.
-Run the code `MTAT_fcbg_rest.m`, a modified version of the program written by Prof. Dr. F. Awiszus ([friedemann.awiszus@med.ovgu.de](friedemann.awiszus@med.ovgu.de)) compatible with the hardware available inside the NMOD facility.
+Run the code `MTAT_fcbg_rest.m`, a modified version of the program written by Prof. Dr. F. Awiszus ([Email Friedemann](mailto:friedemann.awiszus@med.ovgu.de)) compatible with the hardware available inside the NMOD facility.
  
 
 The Matlab program `MTAT_fcbg_rest.m` connects to the TMS and iteratively:
