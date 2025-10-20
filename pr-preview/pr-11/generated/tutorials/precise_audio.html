@@ -287,7 +287,7 @@ to download the full example code.</p>
 parallel port, it’s important to ensure that the sound and the trigger are synchronized.</p>
 <section id="python-sleep-precision">
 <h2>Python sleep precision<a class="headerlink" href="#python-sleep-precision" title="Link to this heading">🔗</a></h2>
-<p>The <a class="reference external" href="https://docs.python.org/3/library/time.html#time.sleep" title="(in Python v3.13)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code></a> function from the <a class="reference external" href="https://docs.python.org/3/library/time.html#module-time" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time</span></code></a> module is not precise enough to halt the
+<p>The <a class="reference external" href="https://docs.python.org/3/library/time.html#time.sleep" title="(in Python v3.14)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code></a> function from the <a class="reference external" href="https://docs.python.org/3/library/time.html#module-time" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time</span></code></a> module is not precise enough to halt the
 program execution for a precise amount of time. The variability depends on the operating
 system and python version and should be measured before using it in an experiment.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
@@ -304,11 +304,11 @@ system and python version and should be measured before using it in an experimen
 <p>Locally, I measured 5.06822 ms ± 61.4 μs per loop (mean ± std. dev. of 3 runs, 100
 loop each).</p>
 <p>If greater sleeping precision is needed, the sleeping period can be cut into segments
-waited with <a class="reference external" href="https://docs.python.org/3/library/time.html#time.sleep" title="(in Python v3.13)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code></a> and a last segment where a <a class="reference external" href="https://docs.python.org/3/library/time.html#time.perf_counter" title="(in Python v3.13)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.perf_counter()</span></code></a> is
+waited with <a class="reference external" href="https://docs.python.org/3/library/time.html#time.sleep" title="(in Python v3.14)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code></a> and a last segment where a <a class="reference external" href="https://docs.python.org/3/library/time.html#time.perf_counter" title="(in Python v3.14)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.perf_counter()</span></code></a> is
 used to wait for the remaining time.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Note that using <a class="reference external" href="https://docs.python.org/3/library/time.html#time.sleep" title="(in Python v3.13)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code></a> is important as it gives back the control to
+<p>Note that using <a class="reference external" href="https://docs.python.org/3/library/time.html#time.sleep" title="(in Python v3.14)"><code class="xref py py-func docutils literal notranslate"><span class="pre">time.sleep()</span></code></a> is important as it gives back the control to
 the operating system, allowing other processes to run.</p>
 </div>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">high_precision_sleep</span><span class="p">(</span><span class="n">duration</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
