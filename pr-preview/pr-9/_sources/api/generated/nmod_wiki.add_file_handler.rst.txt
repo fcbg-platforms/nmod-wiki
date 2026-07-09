@@ -1,0 +1,9 @@
+﻿nmod\_wiki.add\_file\_handler
+=============================
+
+.. currentmodule:: nmod_wiki
+
+.. autofunction:: add_file_handler
+
+.. minigallery:: nmod_wiki.add_file_handler
+    :add-heading:

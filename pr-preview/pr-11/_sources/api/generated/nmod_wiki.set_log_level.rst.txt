@@ -1,0 +1,9 @@
+﻿nmod\_wiki.set\_log\_level
+==========================
+
+.. currentmodule:: nmod_wiki
+
+.. autofunction:: set_log_level
+
+.. minigallery:: nmod_wiki.set_log_level
+    :add-heading:
